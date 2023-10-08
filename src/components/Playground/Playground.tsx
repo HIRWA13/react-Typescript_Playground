@@ -71,7 +71,7 @@ export default function Playground() {
     // for the interfaces, when we want an interface to have properties from another interface, we just use the extends keyword which is mostly used in es6 classes.
   return (
     <>
-        <h1 className="text-3xl text-center">Hi there</h1>
+        <h1 className="text-3xl text-center"></h1>
     </>
   )
 }
