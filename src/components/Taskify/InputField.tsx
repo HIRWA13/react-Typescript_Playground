@@ -1,12 +1,13 @@
 interface Props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>
+  handleAdd: (e: React.FormEvent)=> void;
 }
 
-export default function InputField({todo, setTodo}:Props) {
+export default function InputField({todo, setTodo, handleAdd}:Props) {
   return (
     <>
-      <form className="flex w-4/5 relative items-center">
+      <form className="flex w-4/5 relative items-center" onSubmit={handleAdd}>
         <input 
             type="text" 
             placeholder="Enter a task"
@@ -17,7 +18,9 @@ export default function InputField({todo, setTodo}:Props) {
             }
             />
         <button 
-            className="p-4 m-3  rounded-xl absolute right-0 border-none text-lg bg-blue-600 text-white shadow-lg cursor-pointer">Add</button>
+            className="p-4 m-3  rounded-xl absolute top-1 right-0 border-none text-lg bg-blue-600 text-white shadow-lg cursor-pointer"
+            type="submit"
+            >Add</button>
       </form>
     </>
   )
