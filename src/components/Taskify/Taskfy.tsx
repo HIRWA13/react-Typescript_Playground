@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InputField from "./InputField";
 import { Todo } from "./model";
+import TodoList from "./TodoList";
 
 export default function Taskfy() {
   const [todo, setTodo] = useState<string>("")
@@ -19,9 +20,7 @@ export default function Taskfy() {
       <section className="w-full h-full flex flex-col items-center bg-blue-400">
         <span className="text-3xl uppercase  mt-10 text-white">Taskfy</span>
         <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
-        {todos.map(t => {
-          return <li key={t.id}>{t.todo}</li>
-        })}
+        <TodoList todos={todos} setTodos={setTodos}/>
       </section>
     </>
   );
