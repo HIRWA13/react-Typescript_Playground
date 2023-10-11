@@ -7,7 +7,7 @@ function App() {
     <>
         {/* <Playground/>
         <Taskfy/> */}
-       <Greet name="Junior"/>
+       <Greet name="Junior" unreadMessages={20} isLoggedIn={false}/>
     </>
   )
 }
