@@ -5,16 +5,16 @@ import Person from "./components/CrashCourse/Person"
 
 
 function App() {
-  const personName = {
-    first: "Bruce",
-    last: "Wayne"
+  const person = {
+    first: "Junior",
+    last: "Kiyotaka"
   }
   return (
     <>
         {/* <Playground/>
         <Taskfy/> */}
        <Greet name="Junior" unreadMessages={20} isLoggedIn={false}/>
-       <Person name={personName}/>
+       <Person name={person}/>
     </>
   )
 }
