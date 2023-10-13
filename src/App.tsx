@@ -28,7 +28,7 @@ function App() {
     <>
         {/* <Playground/>
         <Taskfy/> */}
-       <Greet name="Junior" unreadMessages={20} isLoggedIn={false}/>
+       <Greet name="Junior"  isLoggedIn={false}/>
        <Person name={person}/>
        <PersonList names={personList}/>
         <Status status="error"/>

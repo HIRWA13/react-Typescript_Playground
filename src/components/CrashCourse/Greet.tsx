@@ -1,6 +1,6 @@
 type GreetProps = {
   name: string,
-  unreadMessages: number,
+  unreadMessages?: number,
   isLoggedIn: boolean
 }
 
